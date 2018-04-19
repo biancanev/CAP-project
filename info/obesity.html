@@ -6,6 +6,132 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  #myChart {
+  height:100%;
+  width:100%;
+  min-height:150px;
+}
+.zc-ref {
+  display: none;
+}
+</style>
+<script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];
+</script>
+  <script>
+
+var myConfig = {
+ 	type: "gauge",
+ 	globals: {
+ 	  fontSize: 25
+ 	},
+ 	plotarea:{
+ 	  marginTop:80
+ 	},
+ 	plot:{
+ 	  size:'100%',
+ 	  valueBox: {
+ 	    placement: 'center',
+ 	    text:'%v', //default
+ 	    fontSize:35,
+ 	    rules:[
+ 	      {
+ 	        rule: '%v >= 700',
+ 	        text: '%v<br>Extremely Dangerous'
+ 	      },
+ 	      {
+ 	        rule: '%v < 700 && %v > 640',
+ 	        text: '%v<br>Very Dangerous'
+ 	      },
+ 	      {
+ 	        rule: '%v < 640 && %v > 580',
+ 	        text: '%v<br>Moderately Dangerous'
+ 	      },
+ 	      {
+ 	        rule: '%v <  580',
+ 	        text: '%v<br>Dangerous'
+ 	      }   
+ 	    ]
+ 	  }
+ 	},
+  tooltip:{
+    borderRadius:5
+  },
+ 	scaleR:{
+	  aperture:180,
+	  minValue:300,
+	  maxValue:850,
+	  step:50,
+	  center:{
+	    visible:false
+	  },
+	  tick:{
+	    visible:false
+	  },
+	  item:{
+	    offsetR:0,
+	    rules:[
+	      {
+	        rule:'%i == 9',
+	        offsetX:15
+	      }
+	    ]
+	  },
+	  labels:['0','','','','','','6','7','8','9','','10'],
+	  ring:{
+	    size:50,
+	    rules:[
+	      {
+	        rule:'%v <= 580',
+	        backgroundColor:'#eee058'
+	      },
+	      {
+	        rule:'%v > 580 && %v < 640',
+	        backgroundColor:'#FFA726'
+	      },
+	      {
+	        rule:'%v >= 640 && %v < 700',
+	        backgroundColor:'#EF5350'
+	      },
+	      {
+	        rule:'%v >= 700',
+	        backgroundColor:'#E53935'
+	      }      
+	    ]
+	  }
+ 	},
+  refresh:{  
+      type:"feed",
+      transport:"js",
+      url:"feed()",
+      interval:1500,
+      resetTimeout:1000
+  },
+	series : [
+		{
+			values : [600], // starting value
+			backgroundColor:'black',
+	    indicator:[10,10,10,10,0.75],
+	    animation:{  
+        effect:2,
+        method:1,
+        sequence:4,
+        speed: 900
+     },
+		}
+	]
+};
+
+zingchart.render({ 
+	id : 'myChart', 
+	data : myConfig, 
+	height: 500, 
+	width: '100%'
+});
+
+</script>
 <body id="myPage">
 
 <!-- Sidebar on click -->
@@ -61,6 +187,7 @@
     </header>
   </div>
 </div>
+  <dic class="myChart"></div>
   <h3><strong>What is Obesity</strong></h3>
   <p>Obesity is being extremely overweight to the point of danger. Obesity can be extremely fatal, as the 5th leading disease in the whole world
     Other diseases related to obesity are <a href="/CAP-project/info/diabetes">diabetes</a>, heart disease, high blood pressure, some types of cancer, gallbladder diseases, osteoarthritis,
