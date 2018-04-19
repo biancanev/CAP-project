@@ -17,11 +17,7 @@
   display: none;
 }
 </style>
-<script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
-<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
-		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];
-</script>
-  <script>
+<script src= "https://cdn.zingchart.com/zingchart.min.js">
 
 var myConfig = {
  	type: "gauge",
@@ -35,24 +31,24 @@ var myConfig = {
  	  size:'100%',
  	  valueBox: {
  	    placement: 'center',
- 	    text:'%v', //default
+ 	    text:'', //default
  	    fontSize:35,
  	    rules:[
  	      {
  	        rule: '%v >= 700',
- 	        text: '%v<br>Extremely Dangerous'
+ 	        text: '<br>Extremely Dangerous'
  	      },
  	      {
  	        rule: '%v < 700 && %v > 640',
- 	        text: '%v<br>Very Dangerous'
+ 	        text: '<br>Very Dangerous'
  	      },
  	      {
  	        rule: '%v < 640 && %v > 580',
- 	        text: '%v<br>Moderately Dangerous'
+ 	        text: '<br>Moderately Dangerous'
  	      },
  	      {
  	        rule: '%v <  580',
- 	        text: '%v<br>Dangerous'
+ 	        text: '<br>Dangerous'
  	      }   
  	    ]
  	  }
@@ -112,7 +108,7 @@ var myConfig = {
   },
 	series : [
 		{
-			values : [600], // starting value
+			values : [730], // starting value
 			backgroundColor:'black',
 	    indicator:[10,10,10,10,0.75],
 	    animation:{  
@@ -132,6 +128,9 @@ zingchart.render({
 	width: '100%'
 });
 
+</script>
+<script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+		ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];
 </script>
 <body id="myPage">
 
