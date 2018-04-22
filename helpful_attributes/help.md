@@ -43,6 +43,7 @@ There is also another way to produce text - the *p* tag. It produces standard, p
  ```
  will produce:
  P
+ Congratulations, we can now put text on our websites!
 ### Links
 Another useful tag to know is the tag that creates links, the *a* tag. Standard syntax is:
 ```html
@@ -56,4 +57,14 @@ Another useful tag to know is the tag that creates links, the *a* tag. Standard 
 ```html
  <a href=""></a>
  ```
-Now, we want the link to redirect the user to google, or more specifically, [https://www.google.com]
+Now, we want the link to redirect the user to google, or more specifically, [https://www.google.com](https://www.google.com). Therefore, we type inside the quotes the URL.
+```html
+ <a href="https://www.google.com"></a>
+ ```
+Great! Now we have a link that can redirect the user to google, however before you get too excited, the user can't see it. That's because we didn't give the user any text to click on. Therefore, we add our desired text inside the *a* tag.
+ ```html
+ <a href="https://www.google.com">Google</a>
+ ```
+ This will produce:
+ [Google](https://www.google.com)
+ Tada! We have created our first link!
