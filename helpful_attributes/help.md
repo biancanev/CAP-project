@@ -53,7 +53,9 @@ There is also another way to produce text - the *p* tag. It produces standard, p
  <p>P</p>
  ```
  will produce:
+ 
  P
+ 
  Congratulations, we can now put text on our websites!
 ### Links
 Another useful tag to know is the tag that creates links, the *a* tag. Standard syntax is:
