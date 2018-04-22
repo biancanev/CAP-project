@@ -99,7 +99,7 @@ Can I create a link?
 
 [Link](https://www.google.com)
 
-What if I want to make a word in a sentence a [link](https://www.google.com) though? Easy! Let's just add the ```<a>``` tag in the ```<p>``` tag.
+What if I want to make a word in a sentence a [link](https://www.google.com) though? Easy! Let's just add the ```<a>``` tag inside the ```<p>``` tag.
 ```html
 <p>Can I create a <a href="https://www.google.com">link</a>?</p>
 ```
