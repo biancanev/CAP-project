@@ -9,5 +9,9 @@ to the HTML tag. Standard Sytax is this:
 ```html
 <tag attribute="value">Input</tag>
 ```
+Common tags are:
+  *class
+  *id
+  *title
 ### Text
 HTML text 
