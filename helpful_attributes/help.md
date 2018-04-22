@@ -13,6 +13,7 @@ Common attributes are:
   * class
   * id
   * title
+ 
  These are diplayed as:
  ```html
  <p class=""></p>
