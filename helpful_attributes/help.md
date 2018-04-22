@@ -6,7 +6,7 @@ HTML is organized in what is called *tags*. For example, to use the *p* tag, typ
  <p></p>
  <div><div>
  ```
-As you can see from the example, there are 2 types of tags, a start(<tag>) and end(</tag>). There are many things you can do with these tags. How? Sometimes, we put things in between the start and end tag like this:
+As you can see from the example, there are 2 types of tags, a start(```<tag>```) and end(```</tag>```). There are many things you can do with these tags. How? Sometimes, we put things in between the start and end tag like this:
 ```html
   <p>Input</p>  
 ```
