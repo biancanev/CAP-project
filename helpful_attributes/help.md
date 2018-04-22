@@ -1,11 +1,18 @@
 # How to Edit using HTML
 ### About HTML
 #### How to use HTML
-HTML is organized in what is called *tags*. For example, to use the *p* tag, type *<p>* to start. Likewise if you want to use the *div* tab, 
-you would type *<div>*
+HTML is organized in what is called *tags*. For example, to use the *p* tag, type *<p>* to start. Likewise if you want to use the *div* tab, you would type *<div>* For example:
+ ```html
+ <p></p>
+ <div><div>
+ ```
+As you can see from the example, there are 2 types of tags, a start(<tag>) and end(</tag>). There are many things you can do with these tags. How? Sometimes, we put things in between the start and end tag like:
+```html
+  <p>Input</p>  
+```
+There are other things you can do with HTML tags, such as attributes, which we will talk about below.
 #### HTML attributes
-Some HTML tags do not cover all the information needed for the computer to create the desired output, therefore you would add an attribute 
-to the HTML tag. Standard Sytax is this:
+Some HTML tags do not cover all the information needed for the computer to create the desired output, therefore you would add an attribute to the HTML tag. Standard Sytax is this:
 ```html
 <tag attribute="value">Input</tag>
 ```
