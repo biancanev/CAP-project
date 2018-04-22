@@ -83,3 +83,28 @@ Great! Now we have a link that can redirect the user to google, however before y
  [Google](https://www.google.com)
  
  Tada! We have created our first link!
+### Combining what we know
+Now that you know the two most important tags in HTML, you are ready to combine this to make a real website! First, lets start with this sentence: *Can I create a link?*. Okay, let's use the ```<p>``` tag.
+```html
+<p>Can I create a link?</p>
+```
+Now, let's add a link.
+```html
+<p>Can I create a link?</p>
+<a href="https://www.google.com">Link</a>
+```
+This will create:
+
+Can I create a link?
+
+[Link](https://www.google.com)
+
+What if I want to make a word in a sentence a [link](https://www.google.com) though?. Easy! Let's just add the ```<a>``` tag in the ```<p>``` tag.
+```html
+<p>Can I create a <a href="https://www.google.com">link</a>?</p>
+```
+This will produce:
+
+Can I create a [link](https://www.google.com)?
+
+Yay! We did it!
