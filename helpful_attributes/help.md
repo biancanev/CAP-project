@@ -16,11 +16,14 @@ Common attributes are:
  
  These are diplayed as:
  ```html
- <p class=""></p>
- <p id=""></p>
- <p title=""></p>
+ <p class="className"></p>
+ <p id="idName"></p>
+ <p title="titleName"></p>
  ```
- at bare minimum.
+ at bare minimum. You can also have multiple attributes:
+ ```html
+<p class="className" id="idName" title="titleName"></p>
+```
 ### Text
 HTML text can be sorted into sizes using the *h* tags. The tags are ordered from largest to smallest, h1 to h6, respectively. For example:
 ```html
