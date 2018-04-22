@@ -66,5 +66,7 @@ Great! Now we have a link that can redirect the user to google, however before y
  <a href="https://www.google.com">Google</a>
  ```
  This will produce:
+ 
  [Google](https://www.google.com)
+ 
  Tada! We have created our first link!
