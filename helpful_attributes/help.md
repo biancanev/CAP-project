@@ -9,10 +9,17 @@ to the HTML tag. Standard Sytax is this:
 ```html
 <tag attribute="value">Input</tag>
 ```
-Common tags are:
+Common attributes are:
   * class
   * id
   * title
+ These are diplayed as:
+ ```html
+ <p class=""></p>
+ <p id=""></p>
+ <p title=""></p>
+ ```
+ at bare minimum.
 ### Text
 HTML text can be sorted into sizes using the *h* tags. The tags are ordered from largest to smallest, h1 to h6, respectively. For example:
 ```html
@@ -36,3 +43,17 @@ There is also another way to produce text - the *p* tag. It produces standard, p
  ```
  will produce:
  P
+### Links
+Another useful tag to know is the tag that creates links, the *a* tag. Standard syntax is:
+```html
+ <a href="webURL">Text Displayed</a>
+ ```
+ What does this mean? Let's say that you want to create a link to go to [google](https://www.google.com). First you would start off by using the *a* tag.
+```html
+ <a></a>
+ ```
+ Now how do you link that to another page? Luckily, HTML covers that for you with the *href* attribute(for more information go to our attribute section).
+```html
+ <a href=""></a>
+ ```
+Now, we want the link to redirect the user to google, or more specifically, [https://www.google.com]
