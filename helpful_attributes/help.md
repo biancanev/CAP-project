@@ -108,3 +108,5 @@ This will produce:
 Can I create a [link](https://www.google.com)?
 
 Yes. Yes you can.
+### About CSS
+CSS allows you to customize the html you put on the webpage. For the CAP prject, we will be using the library [W3.CSS](https://www.w3schools.com/w3css/).
