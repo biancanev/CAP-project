@@ -1,6 +1,6 @@
 # How to Edit using HTML
 ### About HTML
-#### How to use HTML
+#### How to use HTML(Hyper Text Markup Language)
 HTML is organized in what is called *tags*. For example, to use the *p* tag, type ```<p>``` to start. Likewise if you want to use the *div* tab, you would type ```<div>```. For example:
  ```html
  <p></p>
@@ -108,3 +108,5 @@ This will produce:
 Can I create a [link](https://www.google.com)?
 
 Yes. Yes you can.
+### About CSS
+CSS allows you to customize the html you put on the webpage. For the CAP prject, we will be using the library [W3.CSS](https://www.w3schools.com/w3css/)(See for full documentation).
