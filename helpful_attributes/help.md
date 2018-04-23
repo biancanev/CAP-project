@@ -1,6 +1,6 @@
 # How to Edit using HTML
 ### About HTML
-#### How to use HTML(__H__yper __T__ext __M__arkup __L__anguage)
+#### How to use HTML(Hyper Text Markup Language)
 HTML is organized in what is called *tags*. For example, to use the *p* tag, type ```<p>``` to start. Likewise if you want to use the *div* tab, you would type ```<div>```. For example:
  ```html
  <p></p>
