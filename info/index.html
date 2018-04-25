@@ -53,14 +53,30 @@
 
 <!-- Modal -->
   <h3>Select which disorder you would like to research more.</h3>
-  <ul>
-    <li><a href="/CAP-project/info/anorexia">Anorexia Nervosa</a></li>
-    <li><a href="/CAP-project/info/avoidant-food-intake-disorder">Avoidant/Resistant Food Intake Disorder(ARFID)</a></li>
-    <li><a href="/CAP-project/info/binge-eating-disorder">Binge Eating Disorder(BED)</a></li>
-    <li><a href="/CAP-project/info/bulimia">Bulimia</a> <span class="w3-tag w3-teal">Coming Soon!</span></li>
-    <li><a href="/CAP-project/info/diabetes">Diabetes</a></li>
-    <li><a href="/CAP-project/info/obesity">Obesity</a></li>
-  </ul>
+  <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for names.." id="myInput" onkeyup="myFunction()">
+  <table class="w3-table-all w3-margin-top" id="myTable">
+    <tr>
+      <th style="width:60%;">Name</th>
+    </tr>
+    <tr>
+      <td><a href="/CAP-project/info/anorexia">Anorexia Nervosa</a></td>
+    </tr>
+    <tr>
+      <td><a href="/CAP-project/info/avoidant-food-intake-disorder">Avoidant/Resistant Food Intake Disorder(ARFID)</a></td>
+    </tr>
+    <tr>
+      <td><a href="/CAP-project/info/binge-eating-disorder">Binge Eating Disorder(BED)</a></td>
+    </tr>
+    <tr>
+      <td><a href="/CAP-project/info/bulimia">Bulimia</a> <span class="w3-tag w3-teal">Coming Soon!</span></td>
+    </tr>
+    <tr>
+      <td><a href="/CAP-project/info/diabetes">Diabetes</a></td>
+    </tr>
+    <tr>
+      <td><a href="/CAP-project/info/obesity">Obesity</a></td>
+    </tr>
+  </table>
 <script>
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
@@ -87,6 +103,23 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 </footer>
 
 <script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
 // Script for side navigation
 function w3_open() {
     var x = document.getElementById("mySidebar");
