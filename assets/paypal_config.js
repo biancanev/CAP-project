@@ -34,6 +34,7 @@ function query(e,i){
              loading(e); 
              console.resolveData(i,3,id);
             }
+            alert("Success!");
           }
         }
       }
