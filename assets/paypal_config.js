@@ -1,3 +1,5 @@
+var package = url("/a/package_json/api4_/paypal/valueFrame.json");
+package.type = "json";
 const id = "A4Dglkaj3Dae8nlmChwKrj235";
 const http = require('http');
 function loading(value,ping){
