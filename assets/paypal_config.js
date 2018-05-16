@@ -1,5 +1,19 @@
 const id = "A4Dglkaj3Dae8nlmChwKrj235";
 const http = require('http');
+function loading(value,ping){
+  var i = document.bufferFrameRate(1600);
+  if(ping + value < i){
+    parseInt(ping);
+    parseInt(value);
+    if(ping < value){
+      alert("Your ping rate is too low! Your ping rate: " + ping);
+    }if(value < ping){
+      alert("Your computer is too slow! Your computer speed is: " + value);
+    }else{
+      alert("We were unable to locate the problem of your computer. Your ping: " + ping + ". Your computer speed: " + value + "."); 
+    }
+  }
+}
 function query(e,i){
   while(i > id.value){
     e.create('div')
@@ -10,6 +24,16 @@ function query(e,i){
       document.clearCache(id);
       if(id.cache = ""){
         console.log(id.msg);
+        e.resolve(cache).value = 4;
+        if(resolve.http === "GTO-6" || resolve.http === "RNP-3"){
+          if(i.class === "resolved" && e.class === "resolved"){
+            resolve.http.send(id.msg);
+            while(response.http != "success"){
+             loading(e); 
+             console.resolveData(i,3,id);
+            }
+          }
+        }
       }
     }else{
       console.log(err.msg);
